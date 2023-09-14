@@ -1,0 +1,35 @@
+.tabuleiro {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.branco {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.preto {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.pecaBranca {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.pecaVermelha {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
+}

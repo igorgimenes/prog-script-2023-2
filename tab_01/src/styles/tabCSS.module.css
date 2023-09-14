@@ -1,0 +1,19 @@
+.tabuleiro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+}
+
+.quadrado {
+    width: 125px;
+    height: 125px;
+}
+
+.quadrado .branco {
+    background-color: white;
+}
+
+.quadrado .preto {
+    background-color: black;
+}

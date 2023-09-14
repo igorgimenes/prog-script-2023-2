@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .tabuleiro {
+            width: 800px; /* 8 colunas * 100px cada */
+            height: 800px; /* 8 linhas * 100px cada */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+
+        .quadrado.branco {
+            background-color: white;
+        }
+
+        .quadrado.preto {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabuleiro" id="tabuleiro">
+    </div>
+    
+    <script>
+        var tabuleiro = document.getElementById('tabuleiro');
+        var cores = ['branco', 'preto'];
+        var corAtual = 0;
+
+        for (var linha = 1; linha <= 8; linha++) {
+            for (var coluna = 1; coluna <= 8; coluna++) {
+                var cor = cores[corAtual];
+                var quadrado = document.createElement('div');
+                quadrado.className = 'quadrado ' + cor;
+                tabuleiro.appendChild(quadrado);
+                corAtual = 1 - corAtual; // Alterna entre branco e preto
+            }
+            corAtual = 1 - corAtual; // Inverte a cor no início de cada linha
+        }
+    </script>
+</body>
+</html>
