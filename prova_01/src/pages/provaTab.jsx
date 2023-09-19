@@ -5,7 +5,6 @@ import styles from "@/styles/tabCSS.module.css"
 export default function ProvaTabuleiro () {
     return(
         <>
-        <h1>Teste</h1>
             <div className={styles.tabuleiro}>
             <ComponenteTabuleiro css="branco"/>
             <ComponenteTabuleiro css="pecaBranca"/>
@@ -90,7 +89,7 @@ export default function ProvaTabuleiro () {
             <ComponenteTabuleiro css="pecaVermelha"/>
             <ComponenteTabuleiro css="branco"/>
             <ComponenteTabuleiro css="pecaVermelha"/>
-            <ComponenteTabuleiro css="branco"/>
+            <ComponenteTabuleiro css="branco"/> 
             </div>
         </>
     )

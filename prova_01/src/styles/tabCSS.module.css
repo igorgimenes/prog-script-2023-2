@@ -1,6 +1,7 @@
 .tabuleiro {
     display: flex;
     flex-wrap: nowrap;
+    background-color: black;
 }
 
 .quadrado {
@@ -21,15 +22,41 @@
 }
 
 .pecaBranca {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    border-radius: 100px;
     background-color: white;
+    margin: 10px;
 }
 
 .pecaVermelha {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-content: center;
     border-radius: 100px;
     background-color: red;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+
+}
+
+.quadrado2 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+
 }
